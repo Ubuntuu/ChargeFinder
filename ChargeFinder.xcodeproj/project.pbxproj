@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40572F8F5C3854C37249E91B /* Pods_ChargeFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712430653DF5DA8E92EA7A81 /* Pods_ChargeFinder.framework */; };
+		50FAC21E4A143355FD30C30D /* Pods_ChargeFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78C4A299891655A39E5E1F0 /* Pods_ChargeFinderTests.framework */; };
+		645152948D79C6577A1B2222 /* Pods_ChargeFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754CCBD73D8D27E9165CF0D1 /* Pods_ChargeFinderUITests.framework */; };
+		7D1B4D2A21370489003F4BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D2921370489003F4BAA /* AppDelegate.swift */; };
+		7D1B4D2C21370489003F4BAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D2B21370489003F4BAA /* MainViewController.swift */; };
+		7D1B4D2F21370489003F4BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B4D2D21370489003F4BAA /* Main.storyboard */; };
+		7D1B4D3221370489003F4BAA /* ChargeFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D3021370489003F4BAA /* ChargeFinder.xcdatamodeld */; };
+		7D1B4D342137048C003F4BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B4D332137048C003F4BAA /* Assets.xcassets */; };
+		7D1B4D372137048C003F4BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1B4D352137048C003F4BAA /* LaunchScreen.storyboard */; };
+		7D1B4D422137048C003F4BAA /* ChargeFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D412137048C003F4BAA /* ChargeFinderTests.swift */; };
+		7D1B4D4D2137048C003F4BAA /* ChargeFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D4C2137048C003F4BAA /* ChargeFinderUITests.swift */; };
+		7D1B4D5C21370C66003F4BAA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D5B21370C66003F4BAA /* InfoViewController.swift */; };
+		7D1B4D5E21370C7E003F4BAA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1B4D5D21370C7E003F4BAA /* FilterViewController.swift */; };
+		7D575C442179DAD700776FE8 /* StationClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D575C432179DAD700776FE8 /* StationClusterView.swift */; };
+		7D5ACC30214FAF1100935304 /* DataLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5ACC2F214FAF1100935304 /* DataLoaderViewController.swift */; };
+		7D9066092181F44800CCA614 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D9066082181F44800CCA614 /* GoogleService-Info.plist */; };
+		7D9A4634213EA42000B4150B /* AnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A4633213EA42000B4150B /* AnnotationViewController.swift */; };
+		7DA7114721410ACD00EBDC58 /* CleverChargeStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA7114621410ACD00EBDC58 /* CleverChargeStations.swift */; };
+		7DAB2246213FF470006DC362 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DAB2245213FF419006DC362 /* FredokaOne-Regular.ttf */; };
+		7DC086642153D5E70014E585 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC086632153D5E70014E585 /* Station.swift */; };
+		7DC086662153D6730014E585 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC086652153D6730014E585 /* Connector.swift */; };
+		7DF7D0BB21416A3900C580DB /* EonChargeStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7D0BA21416A3900C580DB /* EonChargeStations.swift */; };
+		7DF7D0BD2141713C00C580DB /* SuperchargeChargeStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF7D0BC2141713C00C580DB /* SuperchargeChargeStations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D1B4D3E2137048C003F4BAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1B4D1E21370489003F4BAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1B4D2521370489003F4BAA;
+			remoteInfo = ChargeFinder;
+		};
+		7D1B4D492137048C003F4BAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D1B4D1E21370489003F4BAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D1B4D2521370489003F4BAA;
+			remoteInfo = ChargeFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0216AC8ED6E8FE14F977D8FA /* Pods-ChargeFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChargeFinderTests/Pods-ChargeFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2ACFAABD496B1C1013F45096 /* Pods-ChargeFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChargeFinderUITests/Pods-ChargeFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50BC0E8325CCE550B531DF15 /* Pods-ChargeFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChargeFinder/Pods-ChargeFinder.release.xcconfig"; sourceTree = "<group>"; };
+		712430653DF5DA8E92EA7A81 /* Pods_ChargeFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChargeFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754CCBD73D8D27E9165CF0D1 /* Pods_ChargeFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChargeFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1B4D2621370489003F4BAA /* ChargeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1B4D2921370489003F4BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D1B4D2B21370489003F4BAA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7D1B4D2E21370489003F4BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D1B4D3121370489003F4BAA /* ChargeFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChargeFinder.xcdatamodel; sourceTree = "<group>"; };
+		7D1B4D332137048C003F4BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D1B4D362137048C003F4BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D1B4D382137048C003F4BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1B4D3D2137048C003F4BAA /* ChargeFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1B4D412137048C003F4BAA /* ChargeFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeFinderTests.swift; sourceTree = "<group>"; };
+		7D1B4D432137048C003F4BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1B4D482137048C003F4BAA /* ChargeFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargeFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1B4D4C2137048C003F4BAA /* ChargeFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeFinderUITests.swift; sourceTree = "<group>"; };
+		7D1B4D4E2137048C003F4BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1B4D5B21370C66003F4BAA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		7D1B4D5D21370C7E003F4BAA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		7D575C432179DAD700776FE8 /* StationClusterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationClusterView.swift; sourceTree = "<group>"; };
+		7D5ACC2F214FAF1100935304 /* DataLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderViewController.swift; sourceTree = "<group>"; };
+		7D9066082181F44800CCA614 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D9A4633213EA42000B4150B /* AnnotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationViewController.swift; sourceTree = "<group>"; };
+		7DA7114621410ACD00EBDC58 /* CleverChargeStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleverChargeStations.swift; sourceTree = "<group>"; };
+		7DAB2245213FF419006DC362 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		7DC086632153D5E70014E585 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		7DC086652153D6730014E585 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		7DF7D0BA21416A3900C580DB /* EonChargeStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EonChargeStations.swift; sourceTree = "<group>"; };
+		7DF7D0BC2141713C00C580DB /* SuperchargeChargeStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperchargeChargeStations.swift; sourceTree = "<group>"; };
+		8A164A23258C740C57718604 /* Pods-ChargeFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeFinderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChargeFinderUITests/Pods-ChargeFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E78C4A299891655A39E5E1F0 /* Pods_ChargeFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChargeFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00FF4BD728D456AABE9FA82 /* Pods-ChargeFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChargeFinderTests/Pods-ChargeFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		F52C177410BC6FDDD66699C8 /* Pods-ChargeFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargeFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChargeFinder/Pods-ChargeFinder.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D1B4D2321370489003F4BAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40572F8F5C3854C37249E91B /* Pods_ChargeFinder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1B4D3A2137048C003F4BAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FAC21E4A143355FD30C30D /* Pods_ChargeFinderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1B4D452137048C003F4BAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645152948D79C6577A1B2222 /* Pods_ChargeFinderUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60436FB73EE6614192E2B7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				712430653DF5DA8E92EA7A81 /* Pods_ChargeFinder.framework */,
+				E78C4A299891655A39E5E1F0 /* Pods_ChargeFinderTests.framework */,
+				754CCBD73D8D27E9165CF0D1 /* Pods_ChargeFinderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D1B4D1D21370489003F4BAA = {
+			isa = PBXGroup;
+			children = (
+				7D1B4D2821370489003F4BAA /* ChargeFinder */,
+				7D1B4D402137048C003F4BAA /* ChargeFinderTests */,
+				7D1B4D4B2137048C003F4BAA /* ChargeFinderUITests */,
+				7D1B4D2721370489003F4BAA /* Products */,
+				C3E6B3D7E8D9F6F4B905A864 /* Pods */,
+				60436FB73EE6614192E2B7C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7D1B4D2721370489003F4BAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D1B4D2621370489003F4BAA /* ChargeFinder.app */,
+				7D1B4D3D2137048C003F4BAA /* ChargeFinderTests.xctest */,
+				7D1B4D482137048C003F4BAA /* ChargeFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D1B4D2821370489003F4BAA /* ChargeFinder */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB2244213FF3D6006DC362 /* Fonts */,
+				7D4BFAC9213D5E18001DF446 /* Models */,
+				7D1B4D5A21370C45003F4BAA /* Views */,
+				7D1B4D2921370489003F4BAA /* AppDelegate.swift */,
+				7D1B4D2D21370489003F4BAA /* Main.storyboard */,
+				7D1B4D332137048C003F4BAA /* Assets.xcassets */,
+				7D1B4D352137048C003F4BAA /* LaunchScreen.storyboard */,
+				7D1B4D382137048C003F4BAA /* Info.plist */,
+				7D9066082181F44800CCA614 /* GoogleService-Info.plist */,
+				7D1B4D3021370489003F4BAA /* ChargeFinder.xcdatamodeld */,
+			);
+			path = ChargeFinder;
+			sourceTree = "<group>";
+		};
+		7D1B4D402137048C003F4BAA /* ChargeFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D1B4D412137048C003F4BAA /* ChargeFinderTests.swift */,
+				7D1B4D432137048C003F4BAA /* Info.plist */,
+			);
+			path = ChargeFinderTests;
+			sourceTree = "<group>";
+		};
+		7D1B4D4B2137048C003F4BAA /* ChargeFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D1B4D4C2137048C003F4BAA /* ChargeFinderUITests.swift */,
+				7D1B4D4E2137048C003F4BAA /* Info.plist */,
+			);
+			path = ChargeFinderUITests;
+			sourceTree = "<group>";
+		};
+		7D1B4D5A21370C45003F4BAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D1B4D2B21370489003F4BAA /* MainViewController.swift */,
+				7D1B4D5B21370C66003F4BAA /* InfoViewController.swift */,
+				7D1B4D5D21370C7E003F4BAA /* FilterViewController.swift */,
+				7D9A4633213EA42000B4150B /* AnnotationViewController.swift */,
+				7D5ACC2F214FAF1100935304 /* DataLoaderViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D4BFAC9213D5E18001DF446 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7DA7114621410ACD00EBDC58 /* CleverChargeStations.swift */,
+				7DF7D0BA21416A3900C580DB /* EonChargeStations.swift */,
+				7DF7D0BC2141713C00C580DB /* SuperchargeChargeStations.swift */,
+				7DC086632153D5E70014E585 /* Station.swift */,
+				7DC086652153D6730014E585 /* Connector.swift */,
+				7D575C432179DAD700776FE8 /* StationClusterView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7DAB2244213FF3D6006DC362 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB2245213FF419006DC362 /* FredokaOne-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C3E6B3D7E8D9F6F4B905A864 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F52C177410BC6FDDD66699C8 /* Pods-ChargeFinder.debug.xcconfig */,
+				50BC0E8325CCE550B531DF15 /* Pods-ChargeFinder.release.xcconfig */,
+				0216AC8ED6E8FE14F977D8FA /* Pods-ChargeFinderTests.debug.xcconfig */,
+				F00FF4BD728D456AABE9FA82 /* Pods-ChargeFinderTests.release.xcconfig */,
+				2ACFAABD496B1C1013F45096 /* Pods-ChargeFinderUITests.debug.xcconfig */,
+				8A164A23258C740C57718604 /* Pods-ChargeFinderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D1B4D2521370489003F4BAA /* ChargeFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1B4D512137048C003F4BAA /* Build configuration list for PBXNativeTarget "ChargeFinder" */;
+			buildPhases = (
+				E5F56352783AD787E4C4F037 /* [CP] Check Pods Manifest.lock */,
+				7D1B4D2221370489003F4BAA /* Sources */,
+				7D1B4D2321370489003F4BAA /* Frameworks */,
+				7D1B4D2421370489003F4BAA /* Resources */,
+				17CADE31F788D1AA35FC0266 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChargeFinder;
+			productName = ChargeFinder;
+			productReference = 7D1B4D2621370489003F4BAA /* ChargeFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D1B4D3C2137048C003F4BAA /* ChargeFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1B4D542137048C003F4BAA /* Build configuration list for PBXNativeTarget "ChargeFinderTests" */;
+			buildPhases = (
+				0678DDE282CD509CDD9061A6 /* [CP] Check Pods Manifest.lock */,
+				7D1B4D392137048C003F4BAA /* Sources */,
+				7D1B4D3A2137048C003F4BAA /* Frameworks */,
+				7D1B4D3B2137048C003F4BAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1B4D3F2137048C003F4BAA /* PBXTargetDependency */,
+			);
+			name = ChargeFinderTests;
+			productName = ChargeFinderTests;
+			productReference = 7D1B4D3D2137048C003F4BAA /* ChargeFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D1B4D472137048C003F4BAA /* ChargeFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1B4D572137048C003F4BAA /* Build configuration list for PBXNativeTarget "ChargeFinderUITests" */;
+			buildPhases = (
+				2945A7261F11313D1D0D2D98 /* [CP] Check Pods Manifest.lock */,
+				7D1B4D442137048C003F4BAA /* Sources */,
+				7D1B4D452137048C003F4BAA /* Frameworks */,
+				7D1B4D462137048C003F4BAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D1B4D4A2137048C003F4BAA /* PBXTargetDependency */,
+			);
+			name = ChargeFinderUITests;
+			productName = ChargeFinderUITests;
+			productReference = 7D1B4D482137048C003F4BAA /* ChargeFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D1B4D1E21370489003F4BAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = TseorT;
+				TargetAttributes = {
+					7D1B4D2521370489003F4BAA = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					7D1B4D3C2137048C003F4BAA = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = 7D1B4D2521370489003F4BAA;
+					};
+					7D1B4D472137048C003F4BAA = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = 7D1B4D2521370489003F4BAA;
+					};
+				};
+			};
+			buildConfigurationList = 7D1B4D2121370489003F4BAA /* Build configuration list for PBXProject "ChargeFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D1B4D1D21370489003F4BAA;
+			productRefGroup = 7D1B4D2721370489003F4BAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D1B4D2521370489003F4BAA /* ChargeFinder */,
+				7D1B4D3C2137048C003F4BAA /* ChargeFinderTests */,
+				7D1B4D472137048C003F4BAA /* ChargeFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D1B4D2421370489003F4BAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAB2246213FF470006DC362 /* FredokaOne-Regular.ttf in Resources */,
+				7D1B4D372137048C003F4BAA /* LaunchScreen.storyboard in Resources */,
+				7D9066092181F44800CCA614 /* GoogleService-Info.plist in Resources */,
+				7D1B4D342137048C003F4BAA /* Assets.xcassets in Resources */,
+				7D1B4D2F21370489003F4BAA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1B4D3B2137048C003F4BAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1B4D462137048C003F4BAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0678DDE282CD509CDD9061A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChargeFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17CADE31F788D1AA35FC0266 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChargeFinder/Pods-ChargeFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChargeFinder/Pods-ChargeFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2945A7261F11313D1D0D2D98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChargeFinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F56352783AD787E4C4F037 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChargeFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D1B4D2221370489003F4BAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF7D0BB21416A3900C580DB /* EonChargeStations.swift in Sources */,
+				7D9A4634213EA42000B4150B /* AnnotationViewController.swift in Sources */,
+				7D1B4D3221370489003F4BAA /* ChargeFinder.xcdatamodeld in Sources */,
+				7D1B4D2C21370489003F4BAA /* MainViewController.swift in Sources */,
+				7DC086662153D6730014E585 /* Connector.swift in Sources */,
+				7D575C442179DAD700776FE8 /* StationClusterView.swift in Sources */,
+				7DC086642153D5E70014E585 /* Station.swift in Sources */,
+				7D1B4D5C21370C66003F4BAA /* InfoViewController.swift in Sources */,
+				7D1B4D2A21370489003F4BAA /* AppDelegate.swift in Sources */,
+				7DA7114721410ACD00EBDC58 /* CleverChargeStations.swift in Sources */,
+				7D5ACC30214FAF1100935304 /* DataLoaderViewController.swift in Sources */,
+				7D1B4D5E21370C7E003F4BAA /* FilterViewController.swift in Sources */,
+				7DF7D0BD2141713C00C580DB /* SuperchargeChargeStations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1B4D392137048C003F4BAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1B4D422137048C003F4BAA /* ChargeFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1B4D442137048C003F4BAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1B4D4D2137048C003F4BAA /* ChargeFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D1B4D3F2137048C003F4BAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1B4D2521370489003F4BAA /* ChargeFinder */;
+			targetProxy = 7D1B4D3E2137048C003F4BAA /* PBXContainerItemProxy */;
+		};
+		7D1B4D4A2137048C003F4BAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D1B4D2521370489003F4BAA /* ChargeFinder */;
+			targetProxy = 7D1B4D492137048C003F4BAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D1B4D2D21370489003F4BAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1B4D2E21370489003F4BAA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D1B4D352137048C003F4BAA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1B4D362137048C003F4BAA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D1B4D4F2137048C003F4BAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D1B4D502137048C003F4BAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D1B4D522137048C003F4BAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52C177410BC6FDDD66699C8 /* Pods-ChargeFinder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GVLR7796M4;
+				INFOPLIST_FILE = ChargeFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.novasa.ChargeFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7D1B4D532137048C003F4BAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BC0E8325CCE550B531DF15 /* Pods-ChargeFinder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GVLR7796M4;
+				INFOPLIST_FILE = ChargeFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.novasa.ChargeFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7D1B4D552137048C003F4BAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0216AC8ED6E8FE14F977D8FA /* Pods-ChargeFinderTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CGL2WM4H3;
+				INFOPLIST_FILE = ChargeFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TseorT.ChargeFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChargeFinder.app/ChargeFinder";
+			};
+			name = Debug;
+		};
+		7D1B4D562137048C003F4BAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00FF4BD728D456AABE9FA82 /* Pods-ChargeFinderTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CGL2WM4H3;
+				INFOPLIST_FILE = ChargeFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TseorT.ChargeFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChargeFinder.app/ChargeFinder";
+			};
+			name = Release;
+		};
+		7D1B4D582137048C003F4BAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ACFAABD496B1C1013F45096 /* Pods-ChargeFinderUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CGL2WM4H3;
+				INFOPLIST_FILE = ChargeFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TseorT.ChargeFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChargeFinder;
+			};
+			name = Debug;
+		};
+		7D1B4D592137048C003F4BAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A164A23258C740C57718604 /* Pods-ChargeFinderUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CGL2WM4H3;
+				INFOPLIST_FILE = ChargeFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TseorT.ChargeFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChargeFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D1B4D2121370489003F4BAA /* Build configuration list for PBXProject "ChargeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1B4D4F2137048C003F4BAA /* Debug */,
+				7D1B4D502137048C003F4BAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1B4D512137048C003F4BAA /* Build configuration list for PBXNativeTarget "ChargeFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1B4D522137048C003F4BAA /* Debug */,
+				7D1B4D532137048C003F4BAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1B4D542137048C003F4BAA /* Build configuration list for PBXNativeTarget "ChargeFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1B4D552137048C003F4BAA /* Debug */,
+				7D1B4D562137048C003F4BAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1B4D572137048C003F4BAA /* Build configuration list for PBXNativeTarget "ChargeFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1B4D582137048C003F4BAA /* Debug */,
+				7D1B4D592137048C003F4BAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D1B4D3021370489003F4BAA /* ChargeFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D1B4D3121370489003F4BAA /* ChargeFinder.xcdatamodel */,
+			);
+			currentVersion = 7D1B4D3121370489003F4BAA /* ChargeFinder.xcdatamodel */;
+			path = ChargeFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7D1B4D1E21370489003F4BAA /* Project object */;
+}

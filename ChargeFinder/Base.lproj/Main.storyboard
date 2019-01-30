@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aqs-68-0Xe">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Data Loader View Controller-->
+        <scene sceneID="lmj-fx-8JC">
+            <objects>
+                <viewController id="Aqs-68-0Xe" customClass="DataLoaderViewController" customModule="ChargeFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yXK-zH-fLj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AMi-dH-kqu"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="dataSegue" id="jig-Dl-DZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvj-PO-2bK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-847.20000000000005" y="36.945812807881772"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="overCurrentContext" id="BYZ-38-t0r" customClass="MainViewController" customModule="ChargeFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTv-bB-K5n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VTv-bB-K5n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="793-vM-ulh"/>
+                            <constraint firstAttribute="bottom" secondItem="VTv-bB-K5n" secondAttribute="bottom" id="SQL-cH-8gl"/>
+                            <constraint firstItem="VTv-bB-K5n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mh5-MD-fbp"/>
+                            <constraint firstItem="VTv-bB-K5n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZy-jY-vl9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="VTv-bB-K5n" id="K2P-X4-XNL"/>
+                        <segue destination="iSk-mM-Eyw" kind="presentation" identifier="infoSegue" modalPresentationStyle="overCurrentContext" id="Tm5-ym-0kV"/>
+                        <segue destination="V9w-EB-mOB" kind="presentation" identifier="filterSegue" id="pCC-L8-oYJ"/>
+                        <segue destination="5KP-aC-D26" kind="presentation" identifier="annotationSegue" id="JR5-u1-BoQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="36.945812807881772"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="PL3-bm-835">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="iSk-mM-Eyw" customClass="InfoViewController" customModule="ChargeFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFit" id="JNN-oW-XNd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYN-Nr-8gB">
+                                <rect key="frame" x="315" y="374" width="29" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS1-IF-UXh">
+                                <rect key="frame" x="315" y="374" width="29" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="closePopoverButton:" destination="f8z-2I-JA1" eventType="touchUpInside" id="Nx6-dx-awM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xf3-JU-c53"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="749"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6t-1T-e2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="f8z-2I-JA1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="37"/>
+        </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="G65-xk-oJC">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="V9w-EB-mOB" customClass="FilterViewController" customModule="ChargeFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFit" id="4z7-nL-YKN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iZE-GD-Oeb"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="749"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqa-4b-4AZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="37"/>
+        </scene>
+        <!--Annotation View Controller-->
+        <scene sceneID="dj4-Sx-POu">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="5KP-aC-D26" customClass="AnnotationViewController" customModule="ChargeFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFit" id="kQq-hG-t9G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bZs-dq-drC"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="749"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5R-jm-dko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="755.54187192118229"/>
+        </scene>
+    </scenes>
+</document>
